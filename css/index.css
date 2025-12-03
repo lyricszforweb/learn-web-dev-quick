@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+body {
+    background-color: hsl(0, 57%, 21%);
+    color: rgb(160, 187, 218);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    color: wheat;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: 3px;
+}
+
+p , label{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#language, #language:focus, #langauge:active {
+    background-color: transparent !important;
+    border: none;
+    outline: none !important;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.364);
+    padding: 4px;
+    margin-left: 10px;
+    color: white;
+}
+
+#language option {
+    background-color: gray !important;
+}
+
+#target {
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    width: 35%;
+    height: auto;
+    aspect-ratio: 10/10;
+    background-color: rgba(194, 193, 194, 0.971);
+    margin: 5%;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 10px 10px black, 0 0 10px gray inset;
+    text-align: center;
+    min-width: 150px;
+    max-width: 250px;
+}
+
+.card:hover , #language:hover{
+    outline: 4px rgb(148, 46, 28) dashed;
+}
+
+.card p, .card h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.card h3 {
+    padding: 4px;
+    background-color: rgba(111, 111, 111, 0.574);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 2px 2px gray;
+}
+
+.card p {
+    position: absolute;
+    top: 70%;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+canvas {
+    width: 30%;
+    aspect-ratio: 4/4;
+    max-width: 200px;
+}
