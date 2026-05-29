@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    user-select: none;
+}
+
+#percentage {
+    opacity: 0;
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
+    background: radial-gradient(white, silver);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px gray, 0 2px 9px gold inset;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: 110%;
+    transition: all 2s .3s ease-in-out;
+    border-left: 2px dashed red;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -11;
+}
