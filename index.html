@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <title>Learn Web dev Quick</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <div id="loading" style="width: 100vw; height: 100%; position: fixed; top: 0; left: 0;">
+        <input type="range" id="loading_bar">
+    </div>
+    <div id="body" style="display: none;">
+        <header id="header">
+            <h1>Learn Website Development</h1>
+            <h2>HTML</h2>
+            <p>Select a language from the below dropdown to choose a language to learn. </p>
+            <label>Select a language: 
+                <select id="language" onchange="updateChange(this)">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </label>
+        </header>
+        <main id="main">
+            <canvas id="progress"></canvas>
+            <section id="target">
+                
+            </section>
+        </main>
+        <footer id="footer">
+            @ Lyricsz, 2025
+        </footer>
+    </div>
+    <script src="js/home.js"></script>
+    <script src=""></script>
+</body>
+</html>
