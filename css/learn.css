@@ -32,3 +32,24 @@ canvas {
     left: 0;
     z-index: -11;
 }
+
+#startBtn {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    font-size: xx-large;
+    outline: none;
+    border: none;
+}
+
+#progress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    font-size: xx-large;
+    z-index: -2;
+}
