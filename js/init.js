@@ -9,7 +9,7 @@ window.onload = () => {
     setTimeout(() => {
         const canvas = document.getElementById("boardCanvas");
         const ctx = canvas.getContext("2d");
-        const engine = new Engine(canvas, ctx, {width: 1920, height: 1080, aspect: {x: (1920 / window.innerWidth) * 0.5, y: 9, aspect: ((1920 - window.innerWidth) / 16) / ((1080 - window.innerHeight) / 9)}}, lessonGenerator(lessons), optionsArray, 10, 0);
+        const engine = new Engine(canvas, ctx, {width: 1920, height: 1080, aspect: {x: (1920 / window.innerWidth) * 0.5, y: 9, aspect: ((1920 - window.innerWidth) / 16) / ((1080 - window.innerHeight) / 9)}}, lessonGenerator(lessons), optionsArray, 10, 2);
     }, 2000);
 }
 
