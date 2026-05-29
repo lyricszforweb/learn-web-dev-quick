@@ -1,3 +1,25 @@
+@keyframes leave {
+    15%{
+        opacity: 1;
+        
+    }
+    18% {
+        opacity: 0;
+        display: none;
+        left: 110vw;
+    }
+
+    99%{
+        opacity: 0;
+        left: 110vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -52,4 +74,19 @@ canvas {
     width: 70vw;
     font-size: xx-large;
     z-index: -2;
+}
+
+iframe {
+    width: 200px;
+    aspect-ratio: 16 / 9;
+    z-index: 100;
+    outline: none;
+    border: none;
+    max-height: 7vh;
+    animation: leave linear infinite 120s;
+    opacity: 0.4;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
